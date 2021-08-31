@@ -1,47 +1,121 @@
-/*------ INDEX.HTML ------*/
+/* ============ CABEÇALHO ============ */
 
-#banner {
+header {
+    background: #bbb;
+    padding: 20px 0;
+}
+
+.container {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin-left: 5px;
+    padding: 10px 15px 8px 15px;
+    border: 2px solid #000;
+}
+
+nav li:nth-child(1) {
+    border-radius: 0 15px 0 15px;
+}
+
+nav li:nth-child(2) {
+    border-radius: 15px 15px 0 0;
+}
+
+nav li:nth-child(3) {
+    border-radius: 15px 0 15px 0;
+}
+
+nav li:hover {
+    border-color: #c78c19;
+}
+
+nav li:hover a {
+    color: #c78c19;
+}
+
+nav a {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    padding: 10px 15px 8px 15px;
+    margin: -10px -15px -8px -15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+/* ============ HOME ============ */
+
+.banner {
     width: 100%;
 }
 
-.principal {
-    background-color: #ccc;
-}
-
 .titulo-principal {
-    padding-left: 20px;
-}
-
-.titulo-centralizado {
     text-align: center;
+    font-size: 1.7em;
+    margin: 0 0 1em 0;
+    clear: left;
 }
 
-p {
-    text-align: center;
+.principal p {
+    margin: 0 0 1em;
 }
 
-#missao {
-    font-size: 20px;
+.principal strong {
+    font-weight: bold;
 }
 
-strong em {
-    color: red;
-}
-
-.itens {
+.principal em {
     font-style: italic;
 }
 
-.beneficios {
-    background-color: #fff;
-}
-
-ul {
-    display: inline-block;
-    width: 40%;
-    vertical-align: top;
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
 }
 
 .imagem-beneficios {
-    width: 50%;
+    width: 60%;
 }
+
+/* ============ PRODUTOS ============ */
+
+
+
+/* ============ CONTATO ============ */
+
+
+
+/* ============ RODAPÉ ============ */
+
+footer {
+    background-image: url(img/produtos/bg.jpg);
+    text-align: center;
+    padding: 30px 0;
+}
+
+.copyright {
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
