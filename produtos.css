@@ -116,6 +116,98 @@ nav a {
     font-weight: bold;
 }
 
+@media screen and (max-width: 940px) {
+    .container, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: 95%;
+    }
+
+    .produtos {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .produtos li {
+        display: block;
+        text-align: center;
+        width: 50%;
+        margin: 2em auto;
+        padding: 30px 20px;
+        box-sizing: border-box;
+        border: 3px solid #000;
+    }
+
+    .produtos li:nth-child(1) {
+        border-radius: 30px;
+    }
+    
+    .produtos li:nth-child(2) {
+        border-radius: 30px;
+    }
+    
+    .produtos li:nth-child(3) {
+        border-radius: 30px;
+    }
+
+    .produtos li img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    nav ul {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    nav li {
+        border-style: none;
+        font-size: 1em;
+    }
+
+    nav a {
+        display: block;
+        position: static;
+        padding: 10px 0;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.25em;
+        color: #000;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .produtos {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .produtos li {
+        display: block;
+        text-align: center;
+        width: 70%;
+        margin: 2em auto;
+        padding: 30px 20px;
+        box-sizing: border-box;
+        border: 3px solid #000;
+    }
+
+    .produtos li img {
+        width: 100%;
+    }
+}
+
 footer {
     background-image: url(img/produtos/bg.jpg);
     text-align: center;
