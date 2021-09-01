@@ -61,7 +61,7 @@ nav a {
     text-decoration: none;
 }
 
-/* ============ HOME ============ */
+/* ============ BODY ============ */
 
 .banner {
     width: 100%;
@@ -157,7 +157,13 @@ nav a {
     margin: 2em auto;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 940px) {
+    .container, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 600px) {
     .container, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
         width: auto;
     }
@@ -210,16 +216,6 @@ nav a {
         width: 90%;
     }
 }
-
-/* ============ PRODUTOS ============ */
-
-
-
-/* ============ CONTATO ============ */
-
-
-
-/* ============ RODAPÉ ============ */
 
 footer {
     background-image: url(img/produtos/bg.jpg);
