@@ -1,5 +1,9 @@
 /* ============ CABEÇALHO ============ */
 
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
 header {
     background: #bbb;
     padding: 20px 0;
@@ -57,11 +61,6 @@ nav a {
     text-decoration: none;
 }
 
-main {
-    width: 940px;
-    margin: 0 auto;
-}
-
 /* ============ HOME ============ */
 
 .banner {
@@ -73,6 +72,13 @@ main {
     font-size: 1.7em;
     margin: 0 0 1em 0;
     clear: left;
+}
+
+.principal {
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
 }
 
 .principal p {
@@ -93,8 +99,116 @@ main {
     margin: 0 20px 20px 0;
 }
 
+.mapa {
+    background: linear-gradient(#fefefe,#888);
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.beneficios {
+    padding: 3em 0;
+    background: #888;
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens {
+    line-height: 1.5em;
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+.itens::before {
+    content: "\2605";
+}
+
 .imagem-beneficios {
     width: 60%;
+    opacity: 1;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.imagem-beneficios:hover {
+    opacity: 0.8;
+    transition: 200ms;
+}
+
+.video {
+    width: 560px;
+    margin: 2em auto;
+}
+
+@media screen and (max-width: 480px) {
+    .container, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    nav ul {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    nav li {
+        border-style: none;
+        font-size: 1em;
+    }
+
+    nav a {
+        display: block;
+        position: static;
+        padding: 10px 0;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.25em;
+        color: #000;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .principal {
+        width: 80%;
+    }
+
+    .lista-beneficios {
+        text-align: center;
+        width: 100%;
+        padding: 0 0 2em;
+    }
+
+    .imagem-beneficios {
+        width: 100%;
+    }
+
+    .video {
+        width: 90%;
+    }
 }
 
 /* ============ PRODUTOS ============ */
@@ -118,4 +232,3 @@ footer {
     font-size: 16px;
     margin-top: 20px;
 }
-
