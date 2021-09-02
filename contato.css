@@ -118,6 +118,69 @@ td, th {
     padding: 8px 15px;
 }
 
+@media screen and (max-width: 940px) {
+    .container, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: 95%;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    form {
+        text-align: center;
+    }
+
+    input, textarea {
+        margin: 0 auto;
+    }
+
+    legend {
+        margin: 0 auto;
+        padding: 1em 0;
+    }
+
+    table {
+        margin: 0 auto 2em auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    nav ul {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    nav li {
+        border-style: none;
+        font-size: 1em;
+    }
+
+    nav a {
+        display: block;
+        position: static;
+        padding: 10px 0;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.25em;
+        color: #000;
+        text-decoration: none;
+        text-align: center;
+    }
+}
+
 footer {
     background-image: url(img/produtos/bg.jpg);
     text-align: center;
